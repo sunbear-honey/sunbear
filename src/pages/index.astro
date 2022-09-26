@@ -1,15 +1,27 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<style>
+  .cards {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    margin-block: 1rem;
+  }
+</style>
+
+<BaseLayout>
+  <h1>Astro</h1>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati
+    voluptate libero omnis? Sunt ab ipsam, pariatur ullam quibusdam soluta
+    voluptatem est explicabo a possimus quam nulla magnam incidunt, sit placeat.
+  </p>
+
+  <div class="cards">
+    <Card href="/about" title="About Page" body="Things about us..." />
+    <Card href="/git-notes" title="Git Notes" body="Some basic Git reference notes for quick lookup." />
+  </div>
+</BaseLayout>
