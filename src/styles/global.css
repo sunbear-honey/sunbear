@@ -1,44 +1,14 @@
+@import "./reset.css";
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 
 :root {
-  --color-primary-h: 216;
-  --color-primary-s: 16%;
-  --color-primary-l: 6%;
-  --color-accent-h: 231;
-  --color-accent-s: 79%;
-  --color-accent-l: 54%;
-
-  --color-primary: hsl(
-    var(--color-primary-h),
-    var(--color-primary-s),
-    var(--color-primary-l)
-  );
-  --color-accent: hsl(
-    var(--color-accent-h),
-    var(--color-accent-s),
-    var(--color-accent-l)
-  );
-
   --color-black: hsl(0, 0%, 0%);
   --color-white: hsl(0, 100%, 100%);
 
-  --color-background: var(--color-white);
-  --color-text: var(--color-primary);
-}
+  --elevate-1: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  --elevate-2: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 
-:is(*, *::before, *::after) {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-}
-
-:is(html, body) {
-  height: 100%;
-}
-
-body {
   font-family: "Inter", sans-serif;
   font-size: 100%;
   line-height: 1.5;
@@ -60,73 +30,12 @@ h3 {
   font-size: 1.333em;
 }
 
-:is(img, picture) {
-  display: block;
-  max-width: 100%;
-}
-
-:is(button, input, select, textarea) {
-  font: inherit;
-}
-
-pre {
-  padding: 1em;
-}
-
-/*
-  Extra Stuff.
-*/
-body {
-  background-color: var(--color-background);
-  color: var(--color-text);
-}
-
-:is(header, main) {
+.page-wrap {
   margin-inline: auto;
   max-width: 60ch;
+  height: 100%;
 }
 
-main {
+.page-wrap main {
   min-height: 100%;
 }
-
-main h2 {
-  color: var(--color-accent);
-}
-
-button {
-  background-color: var(--color-accent);
-  border: 1px solid var(--color-accent);
-  border-radius: 0.25em;
-  color: var(--color-white);
-  font-size: 1em;
-  min-height: 2.75rem;
-  min-width: 2.75rem;
-  padding-block: 0.5em;
-  padding-inline: 1em;
-}
-
-button:hover {
-  background-color: hsl(
-    var(--color-accent-h),
-    var(--color-accent-s),
-    calc(var(--color-accent-l) * 0.8)
-  );
-}
-
-.elevation-1 {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-
-.elevation-2 {
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.box {
-  margin-block: 1rem;
-  padding: 1em;
-}
-
-/* Markdown Styles */
-
-

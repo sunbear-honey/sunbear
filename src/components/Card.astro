@@ -1,20 +1,23 @@
 ---
-
+import "../styles/global.css"
 ---
 
 <a href={ Astro.props.href }>
   <h2>{ Astro.props.title }</h2>
   <p>{ Astro.props.body }</p>
-  <p>I'm some extra text!!</p>
 </a>
 
 <style>
   a {
-    max-width: 50ch;
-    border: 1px solid black;
-    padding: 1em;
+    border-radius: 0.6em;
+    box-shadow: var(--elevate-1);
+    color: var(--color-black);
     display: block;
+    padding: 1em;
     text-decoration: none;
-    color: black;
+  }
+
+  a:hover {
+    box-shadow: var(--elevate-2);
   }
 </style>

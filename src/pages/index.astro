@@ -8,20 +8,15 @@ import Card from "../components/Card.astro";
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
-    margin-block: 1rem;
+    margin-block: 2rem;
   }
 </style>
 
 <BaseLayout>
-  <h1>Astro</h1>
-  <p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati
-    voluptate libero omnis? Sunt ab ipsam, pariatur ullam quibusdam soluta
-    voluptatem est explicabo a possimus quam nulla magnam incidunt, sit placeat.
-  </p>
+  <h1>Sunbear Notes</h1>
 
   <div class="cards">
-    <Card href="/about" title="About Page" body="Things about us..." />
+    <Card href="/css-reset" title="CSS Reset" body="Minimal reset." />
     <Card href="/git-notes" title="Git Notes" body="Some basic Git reference notes for quick lookup." />
   </div>
 </BaseLayout>

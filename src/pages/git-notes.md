@@ -6,7 +6,7 @@ layout: ../layouts/MarkdownLayout.astro
 
 ## Install Git
 
-### [Official Git Page](https://www.git-scm.com).
+[Official Git Page](https://www.git-scm.com).
 
 ## Get Git Version
 
