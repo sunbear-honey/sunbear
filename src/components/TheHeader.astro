@@ -3,13 +3,19 @@ import "../styles/global.css"
 ---
 
 <header>
-  <a href="/">SunbearDay</a>
+  <nav>
+    <a href="/">SunbearDay</a>
+  </nav>
 </header>
 
 <style>
   header {
     margin-bottom: 2rem;
-    display: flex;
+  }
+
+  header nav {
+    max-width: var(--main-width);
+    margin-inline: auto;
   }
 
   header a {
@@ -17,5 +23,6 @@ import "../styles/global.css"
     font-size: 1.5em;
     padding-block: 0.5em;
     color: var(--color-black);
+    display: block;
   }
 </style>

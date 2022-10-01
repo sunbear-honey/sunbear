@@ -6,6 +6,8 @@
   --color-black: hsl(0, 0%, 0%);
   --color-white: hsl(0, 100%, 100%);
 
+  --main-width: 60ch;
+
   --elevate-1: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   --elevate-2: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -31,11 +33,14 @@ h3 {
 }
 
 .page-wrap {
-  margin-inline: auto;
-  max-width: 60ch;
+  /* margin-inline: auto;
+  max-width: 60ch; */
   height: 100%;
 }
 
 .page-wrap main {
   min-height: 100%;
+  margin-inline: auto;
+  max-width: var(--main-width);
+
 }
