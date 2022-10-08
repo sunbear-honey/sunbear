@@ -132,8 +132,11 @@ To see which remote servers we have configured:
 ```bash
 git remote
 
-# or
+# List all the remote repositories connected to our local repository.
 git remote -v
+
+# Set a new url for origin.
+git remote set-url origin <new-url>
 ```
 
 ## Git Pull
