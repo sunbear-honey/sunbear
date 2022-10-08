@@ -31,6 +31,9 @@ rm -r -f
 
 # Move or rename a file or directory.
 mv
+
+# Unzip to a different directory.
+unzip filename.zip -d /path/to/directory
 ```
 
 

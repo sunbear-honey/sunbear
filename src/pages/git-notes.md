@@ -6,7 +6,8 @@ layout: ../layouts/MarkdownLayout.astro
 
 ## Install Git
 
-[Official Git Page](https://www.git-scm.com).
+Visit [Git-Downloads](https://www.git-scm.com/downloads) to get instructions for installing git.
+
 
 ## Get Git Version
 
@@ -19,8 +20,10 @@ git --version
 ```bash
 # Set user name.
 git config --global user.name "SamSpade"
+
 # Set user email.
 git config --global user.email "samspade@test.com"
+
 # Shot config settings.
 git config --list
 ```
@@ -36,7 +39,10 @@ git init
 ## Check the Status of Repository
 
 ```bash
+# Check the status of your repository.
 git status
+
+# Shorthand version.
 git status --short
 ```
 
@@ -52,24 +58,26 @@ Short status flags:
 ```bash
 # Stage a file by name.
 git add <filename>
+
 # Stage multiple files.
 git add --all | .
 ```
 
-## Git Commit
+## Commiting staged file
 
 ```bash
 git commit -m "message"
+
 # Stage all changed and tracked files.
 git commit -a -m "message"
 ```
 
-## Git Log
-
-Shows a history of commits.
+## See the history of commits
 
 ```bash
 git log
+
+# Show one line at a time.
 git log --oneline
 ```
 
@@ -80,16 +88,22 @@ git log --oneline
 ```bash
 # Create a new branch.
 git branch branch_name
+
 # Checkout a branch.
 git checkout branch_name
+
 # Create a new branch and move to it immediately.
 git checkout -b branch_name
+
 # List all branches in repository.
 git branch
+
 # Merge branches.
 git merge branch_name
+
 # Delete a branch
 git branch -d branch_name
+
 # Force delete a branch.
 git branch -D branch_name
 ```
@@ -108,6 +122,7 @@ Now we can push our master branch to the origin url, and set it as the default r
 
 ```bash
 git push --set-upstream origin master
+
 # Shorthand command.
 git push -u origin master
 ```
@@ -116,6 +131,7 @@ To see which remote servers we have configured:
 
 ```bash
 git remote
+
 # or
 git remote -v
 ```
