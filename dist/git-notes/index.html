@@ -1,0 +1,108 @@
+<!DOCTYPE html><html>
+  <head><link rel="stylesheet" href="/assets/about-css-reset-git-notes-github-notes-index-linux-commands.e5407917.css" />
+<link rel="stylesheet" href="/assets/css-reset-git-notes-github-notes-linux-commands.60a7f25b.css" /></head>
+  <body>
+    <div class="page-wrap">
+      <header class="astro-DSKLUCJ3">
+  <nav class="astro-DSKLUCJ3">
+    <a href="/" class="astro-DSKLUCJ3">SunbearDay</a>
+  </nav>
+</header>
+      <main>
+        <h1 id="git-notes">Git Notes</h1>
+<h2 id="install-git">Install Git</h2>
+<p>Visit <a href="https://www.git-scm.com/downloads">Git-Downloads</a> to get instructions for installing git.</p>
+<h2 id="get-git-version">Get Git Version</h2>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">git --version</span></span></code></pre>
+<h2 id="configure-git-on-local-machine">Configure Git on Local Machine</h2>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #8B949E"># Set user name.</span></span>
+<span class="line"><span style="color: #C9D1D9">git config --global user.name </span><span style="color: #A5D6FF">"SamSpade"</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># Set user email.</span></span>
+<span class="line"><span style="color: #C9D1D9">git config --global user.email </span><span style="color: #A5D6FF">"samspade@test.com"</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># Shot config settings.</span></span>
+<span class="line"><span style="color: #C9D1D9">git config --list</span></span></code></pre>
+<p>If you want to set the user name and email only for a specific repository, remove <code>global</code>.</p>
+<h2 id="initialize-git-repository">Initialize Git Repository</h2>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">git init</span></span></code></pre>
+<h2 id="check-the-status-of-repository">Check the Status of Repository</h2>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #8B949E"># Check the status of your repository.</span></span>
+<span class="line"><span style="color: #C9D1D9">git status</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># Shorthand version.</span></span>
+<span class="line"><span style="color: #C9D1D9">git status --short</span></span></code></pre>
+<p>Short status flags:</p>
+<ul>
+<li>?? - Untracked files</li>
+<li>A - Files added to stage</li>
+<li>M - Modified files</li>
+<li>D - Deleted files</li>
+</ul>
+<h2 id="staging-files">Staging files</h2>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #8B949E"># Stage a file by name.</span></span>
+<span class="line"><span style="color: #C9D1D9">git add </span><span style="color: #FF7B72">&#x3C;</span><span style="color: #C9D1D9">filename</span><span style="color: #FF7B72">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># Stage multiple files.</span></span>
+<span class="line"><span style="color: #C9D1D9">git add --all </span><span style="color: #FF7B72">|</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">.</span></span></code></pre>
+<h2 id="commiting-staged-file">Commiting staged file</h2>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">git commit -m </span><span style="color: #A5D6FF">"message"</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># Stage all changed and tracked files.</span></span>
+<span class="line"><span style="color: #C9D1D9">git commit -a -m </span><span style="color: #A5D6FF">"message"</span></span></code></pre>
+<h2 id="see-the-history-of-commits">See the history of commits</h2>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">git log</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># Show one line at a time.</span></span>
+<span class="line"><span style="color: #C9D1D9">git log --oneline</span></span></code></pre>
+<p><strong>Note</strong>: If there is a long list view in the terminal, <code>shift + G</code> to jump to the end of the list, then <code>q</code> to exit the list.</p>
+<h2 id="git-branches">Git Branches</h2>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #8B949E"># Create a new branch.</span></span>
+<span class="line"><span style="color: #C9D1D9">git branch branch_name</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># Checkout a branch.</span></span>
+<span class="line"><span style="color: #C9D1D9">git checkout branch_name</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># Create a new branch and move to it immediately.</span></span>
+<span class="line"><span style="color: #C9D1D9">git checkout -b branch_name</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># List all branches in repository.</span></span>
+<span class="line"><span style="color: #C9D1D9">git branch</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># Merge branches.</span></span>
+<span class="line"><span style="color: #C9D1D9">git merge branch_name</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># Delete a branch</span></span>
+<span class="line"><span style="color: #C9D1D9">git branch -d branch_name</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># Force delete a branch.</span></span>
+<span class="line"><span style="color: #C9D1D9">git branch -D branch_name</span></span></code></pre>
+<h2 id="working-with-github">Working with GitHub</h2>
+<p>Create a repository on GitHub.
+Copy the URL of the repository and use that URL to set the origin in our local repo.</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">git remote add origin github_repo_url</span></span></code></pre>
+<p>Now we can push our master branch to the origin url, and set it as the default remote branch.</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">git push --set-upstream origin master</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># Shorthand command.</span></span>
+<span class="line"><span style="color: #C9D1D9">git push -u origin master</span></span></code></pre>
+<p>To see which remote servers we have configured:</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">git remote</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># or</span></span>
+<span class="line"><span style="color: #C9D1D9">git remote -v</span></span></code></pre>
+<h2 id="git-pull">Git Pull</h2>
+<p>Git <code>pull</code> is a combination of <code>fetch</code> and <code>merge</code>. It pulls all the changes from a remote repository into the branch of a local one.</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">git pull origin</span></span></code></pre>
+<h2 id="git-push">Git Push</h2>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">git push origin</span></span></code></pre>
+<h2 id="git-clone">Git Clone</h2>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">git clone github_repo_url</span></span></code></pre>
+      </main>
+      <footer class="astro-LKKKIVT3">
+  <p class="astro-LKKKIVT3">SunbearDay</p>
+</footer>
+
+
+    </div>
+  </body></html>

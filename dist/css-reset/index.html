@@ -1,0 +1,55 @@
+<!DOCTYPE html><html>
+  <head><link rel="stylesheet" href="/assets/about-css-reset-git-notes-github-notes-index-linux-commands.e5407917.css" />
+<link rel="stylesheet" href="/assets/css-reset-git-notes-github-notes-linux-commands.60a7f25b.css" /></head>
+  <body>
+    <div class="page-wrap">
+      <header class="astro-DSKLUCJ3">
+  <nav class="astro-DSKLUCJ3">
+    <a href="/" class="astro-DSKLUCJ3">SunbearDay</a>
+  </nav>
+</header>
+      <main>
+        <h1 id="css-reset">CSS Reset</h1>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #8B949E">/* ./styles/reset.css */</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E">/* </span></span>
+<span class="line"><span style="color: #8B949E">Thanks to Josh Comeau for the modern simple reset.</span></span>
+<span class="line"><span style="color: #8B949E">  https://www.joshwcomeau.com/css/custom-css-reset/</span></span>
+<span class="line"><span style="color: #8B949E">*/</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">:is(</span><span style="color: #7EE787">*</span><span style="color: #C9D1D9">, </span><span style="color: #7EE787">*</span><span style="color: #79C0FF">::before</span><span style="color: #C9D1D9">, </span><span style="color: #7EE787">*</span><span style="color: #79C0FF">::after</span><span style="color: #C9D1D9">) {</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #79C0FF">box-sizing</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">border-box</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7EE787">*</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #79C0FF">margin</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">0</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">:is(</span><span style="color: #7EE787">html</span><span style="color: #C9D1D9">, </span><span style="color: #7EE787">body</span><span style="color: #C9D1D9">) {</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #79C0FF">height</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">100</span><span style="color: #FF7B72">%</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7EE787">body</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #79C0FF">line-height</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">1.5</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #7EE787">img</span><span style="color: #C9D1D9">, </span><span style="color: #7EE787">picture</span><span style="color: #C9D1D9">, </span><span style="color: #7EE787">video</span><span style="color: #C9D1D9">, </span><span style="color: #7EE787">canvas</span><span style="color: #C9D1D9">, </span><span style="color: #7EE787">svg</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #79C0FF">display</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">block</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #79C0FF">max-width</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">100</span><span style="color: #FF7B72">%</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">:is(</span><span style="color: #7EE787">input</span><span style="color: #C9D1D9">, </span><span style="color: #7EE787">button</span><span style="color: #C9D1D9">, </span><span style="color: #7EE787">textarea</span><span style="color: #C9D1D9">, </span><span style="color: #7EE787">select</span><span style="color: #C9D1D9">) {</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #79C0FF">font</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">inherit</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">:is(</span><span style="color: #7EE787">p</span><span style="color: #C9D1D9">, </span><span style="color: #7EE787">h1</span><span style="color: #C9D1D9">, </span><span style="color: #7EE787">h2</span><span style="color: #C9D1D9">, </span><span style="color: #7EE787">h3</span><span style="color: #C9D1D9">, </span><span style="color: #7EE787">h4</span><span style="color: #C9D1D9">, </span><span style="color: #7EE787">h5</span><span style="color: #C9D1D9">, </span><span style="color: #7EE787">h6</span><span style="color: #C9D1D9">) {</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #79C0FF">overflow-wrap</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">break-word</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span></code></pre>
+      </main>
+      <footer class="astro-LKKKIVT3">
+  <p class="astro-LKKKIVT3">SunbearDay</p>
+</footer>
+
+
+    </div>
+  </body></html>
